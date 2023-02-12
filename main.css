@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Tahoma, Arial;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+.the_test{
+  width: 600px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 10px;
+  margin: auto;
+}
+.the_test .quiz-info{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.the_test .answer_area{
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+}
+.the_test .answer_area .question{
+  margin: 5px 0 15px;
+}
+.the_test .answer_area .answers{
+  background-color: #f3f3f3;
+  border-radius: 6px;
+}
+.the_test .answer_area .answers ul{
+  padding-left: 10px;
+}
+.the_test .answer_area .answers ul li{
+  padding: 13px;
+  cursor: pointer;
+}
+.the_test .answer_area .answers ul li:not(:last-child){
+  border-bottom: 1px solid #777;
+}
+.the_test .answer_area .answers ul li input{
+  cursor: pointer;
+}
+.the_test .answer_area .answers ul li label{
+  font-size: 18px;
+  color: rgb(40, 40, 40);
+  cursor: pointer;
+}
+.the_test .answer_area .answers ul li input:checked + label{
+  color: #0b67df;
+}
+.the_test button{
+  background-color: #0b67df;
+  color: white;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.the_test .rank{
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.the_test .rank .finished_questions ul{
+  display: flex;
+  gap: 4px;
+  padding-left: 0;
+}
+.the_test .rank .finished_questions ul li{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.the_test .rank .finished_questions ul li.on{
+  background-color: #0b67df;
+  opacity: 50%;
+}
+.the_test .rank .finished_questions ul li.saw{
+  background-color: #0b67df;
+}
+.the_test .rank .result{
+  width: 100%;
+  font-size: 18px;
+  visibility: hidden;
+}
+.the_test .rank .result.bad span{
+  color: red;
+}
+.the_test .rank .result.medium span{
+  color: rgb(255, 137, 2);
+}
+.the_test .rank .result.good span{
+  color: rgb(4, 121, 0);
+}
+.the_test .rank .start{
+  width: fit-content;
+  padding: 10px 25px;
+  background-color: rgb(139, 69, 209);
+  color: white;
+  font-size: 18px;
+  margin: 10px 0 0;
+  cursor: pointer;
+}
